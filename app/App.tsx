@@ -176,10 +176,6 @@ const Home = () => {
     // if the store doesn't exist or is empty, return
     if (!canvasObjects || canvasObjects.size === 0) return true;
 
-    // delete all the shapes from the store
-    for (const [key, value] of canvasObjects.entries()) {
-      canvasObjects.delete(key);
-    }
 
     // return true if the store is empty
     return canvasObjects.size === 0;

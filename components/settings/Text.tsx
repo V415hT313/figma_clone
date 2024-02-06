@@ -87,7 +87,7 @@ import {
   }: Props) => (
     <Select
       key={config.property}
-      onValueChange={(value) => handleInputChange(config.property, value)}
+      onValueChange={(value: string) => handleInputChange(config.property, value)}
       value={
         config.property === "fontFamily"
           ? fontFamily
